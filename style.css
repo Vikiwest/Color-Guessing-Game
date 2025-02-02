@@ -1,0 +1,299 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0; 
+  color: #333; /* Dark text */
+}
+.container {
+  margin-top: 50px;
+}
+
+
+#colorBox {
+  width: 600px;
+  height: 630px;
+  margin: 20px auto;
+  border: 5px solid #000;
+}
+
+.color-container{
+  display: flex;
+  
+}
+
+.color-options {
+  margin-left: -5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+.color-option {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+#gameStatus {
+  margin: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-out {
+  opacity: 0;
+}
+.celebrate {
+  animation: celebrate 5s ease-in-out;
+}
+@keyframes celebrate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.correct {
+  color: green;
+}
+.wrong {
+  color: red;
+}
+
+#score {
+  font-size: 50px;
+  margin: 10px;
+}
+#newGameButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  #colorBox {
+    width: 530px;
+    height: 540px;
+  }
+  
+  .color-option {
+    width: 80px;
+    height: 80px;
+
+  }
+  
+
+  #newGameButton {
+   
+    font-size: 30px;
+ 
+  }
+  
+}
+
+@media (max-width: 680px){
+  #colorBox {
+    width: 440px;
+    height: 430px;
+  }
+  
+  .color-option {
+    width: 55px;
+    height: 55px;
+  }
+  
+  #gameStatus {
+    font-size: 38px;
+  
+  }
+
+  #score {
+    font-size: 50px;
+   
+  }
+
+  #newGameButton {
+  
+    font-size: 15px;
+ 
+  }
+}
+
+@media (max-width: 570px){
+  #colorBox {
+    width: 360px;
+    height: 390px;
+  }
+  
+  .color-option {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #gameStatus {
+    font-size: 38px;
+  
+  }
+
+  #score {
+    font-size: 50px;
+   
+  }
+
+  #newGameButton {
+   
+    font-size: 15px;
+ 
+  }
+}
+
+@media (max-width: 490px) {
+  #colorBox {
+    width: 330px;
+    height: 370px;
+  }
+  
+  .color-option {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #gameStatus {
+    font-size: 28px;
+  
+  }
+
+
+  #newGameButton {
+
+    font-size: 20px;
+ 
+  }
+}
+
+@media (max-width: 450px) {
+  #colorBox {
+    width: 300px;
+    height: 340px;
+  }
+  
+  .color-option {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #gameStatus {
+    font-size: 28px;
+  
+  }
+
+
+  #newGameButton {
+  
+    font-size: 20px;
+ 
+  }
+}
+
+@media (max-width: 420px) {
+  h1{
+    font-size: 27px;
+  }
+  #colorBox {
+    width: 260px;
+    height: 300px;
+  }
+  
+  .color-option {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #gameStatus {
+    font-size: 28px;
+  
+  }
+
+  #score {
+    font-size: 45px;
+  }
+
+  #newGameButton {
+  
+    font-size: 15px;
+ 
+  }
+}
+
+
+@media (max-width: 375px) {
+
+  h1{
+    font-size: 25px;
+  }
+  #colorBox {
+    width: 250px;
+    height: 300px;
+  }
+  
+  .color-option {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #gameStatus {
+    font-size: 28px;
+  
+  }
+
+  #score {
+    font-size: 45px;
+  }
+
+  #newGameButton {
+
+    font-size: 15px;
+ 
+  }
+}
+
+@media  (max-width: 320px) {
+
+  h1{
+    font-size: 24px;
+  }
+  #colorBox {
+    width: 210px;
+    height: 260px;
+  }
+  
+  .color-option {
+    width: 38px;
+    height: 38px;
+  }
+  
+  #gameStatus {
+    font-size: 26px;
+  
+  }
+
+  #score {
+    font-size: 40px;
+   
+  }
+
+  #newGameButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+ 
+  }
+
+}
